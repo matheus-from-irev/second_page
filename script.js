@@ -6,5 +6,5 @@ document.getElementById("form").addEventListener("submit", function(event) {
     let clickId = ""
     clickId = new URLSearchParams(window.location.search).get("click_id");
 
-    window.location.href = "https://example.com?" + formDataString + "&click_id=" + clickId;
+    window.location.href = "https://matheus-from-irev.github.io/third_page/?" + formDataString + "&click_id=" + clickId;
   });
