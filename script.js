@@ -8,5 +8,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
     const clickId = new URLSearchParams(window.location.search).get("click_id");
     event.preventDefault();
     postback = postback.replace("REPLACE", clickId);
+    fetch(postback);
     window.location.href = redirectionPage + "?" + formDataString + "&click_id=" + clickId;
   });
